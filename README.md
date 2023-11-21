@@ -94,7 +94,13 @@ To install all the required libraries for this project, run the following comman
 pip install -r requirements.txt
 ```
 
-You should then download the dataset that you can find in this website: [HIL-Water-Security-Analysis](https://ieee-dataport.org/open-access/hardware-loop-water-distribution-testbed-wdt-dataset-cyber-physical-security-testing)
+You have to then download the dataset that you can find in this website: [HIL-Water-Security-Analysis](https://ieee-dataport.org/open-access/hardware-loop-water-distribution-testbed-wdt-dataset-cyber-physical-security-testing)
+
+And then you have to put the dataset `network_downsampled.csv` in `dataset/Network datatset/csv/`. You can do that by running the following command:
+
+```sh
+mv network_downsampled.csv dataset/Network\ datatset/csv/
+```
 
 ### Installation
 
