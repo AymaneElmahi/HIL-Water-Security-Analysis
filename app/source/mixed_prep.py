@@ -22,7 +22,7 @@ def mix_prep(root):
     df_network_downsampled['Time'] = df_network_downsampled['Time'].dt.round('1s')
 
     # Merge the two dataframes based on the 'Time' and 'attack type number' and Label_n and Label columns and drop the 'attack' column
-    merged_df = pd.merge(df_network_downsampled, df_physical, on=['Time', 'attack_type_number', 'Label_n', 'Label'], how='inner')
+    merged_df = pd.merge(df_network_downsampled, df_physical, on=['Time', 'attack_type_number', 'Label_n', 'Label', 'attack_number'], how='inner')
 
     # delete columns with only one value
     for col in merged_df.columns:

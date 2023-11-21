@@ -113,7 +113,7 @@ for col in categorical_columns:
     merged_df[col] = label_encoder.fit_transform(merged_df[col].astype(str))
 
 # Prepare data for modeling (using Label_n as the target variable)
-X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number', 'attack'], axis=1)
+X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number'], axis=1)
 y = merged_df['Label_n']
 
 # User chooses between Decision Tree and Random Forest
@@ -190,7 +190,7 @@ st.subheader("Dropping the categorical columns")
 st.write("We will now drop the categorical columns and see if the accuracy improves.")
 
 # Prepare data for modeling (using Label_n as the target variable)
-X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number', 'attack'], axis=1)
+X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number'], axis=1)
 # drop categorical columns if they exist
 X = X.select_dtypes(exclude=['object'])
 y = merged_df['Label_n']
@@ -234,7 +234,7 @@ st.subheader("Balancing the dataset")
 st.write("We will now balance the dataset and see if the accuracy improves.")
 
 # Prepare data for modeling (using Label_n as the target variable)
-X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number', 'attack'], axis=1)
+X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number'], axis=1)
 # drop categorical columns if they exist
 X = X.select_dtypes(exclude=['object'])
 y = merged_df['Label_n']
@@ -284,7 +284,7 @@ st.header("Drop the dport column")
 st.write("We will now drop the `dport` column and see if the accuracy improves.")
 
 # Prepare data for modeling (using Label_n as the target variable)
-X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number', 'attack', 'dport'], axis=1)
+X = merged_df.drop(['Label', 'Label_n', 'Time','attack_number','attack_type_number', 'dport'], axis=1)
 # drop categorical columns if they exist
 X = X.select_dtypes(exclude=['object'])
 y = merged_df['Label_n']
