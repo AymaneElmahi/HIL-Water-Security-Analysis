@@ -93,6 +93,7 @@ To install all the required libraries for this project, run the following comman
 ```sh
 pip install -r requirements.txt
 ```
+This projet is working on `Windows`.
 
 You have to then download the dataset that you can find in this website: [HIL-Water-Security-Analysis](https://ieee-dataport.org/open-access/hardware-loop-water-distribution-testbed-wdt-dataset-cyber-physical-security-testing)
 
