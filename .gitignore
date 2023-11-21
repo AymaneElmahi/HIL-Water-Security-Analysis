@@ -1,0 +1,9 @@
+# ignore le dossier dataset
+dataset
+data
+# ignore les fichiers .pyc
+*.pyc
+# ignore les fichiers de configuration
+*.cfg
+# ignore les fichiers de sauvegarde
+*.conf

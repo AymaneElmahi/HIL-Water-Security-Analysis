@@ -1,0 +1,12 @@
+name: data_protection
+
+dependencies:
+  - python=3.9  
+  - streamlit  
+  - matplotlib  
+  - numpy  
+  - pandas
+  - scikit-learn
+  - seaborn
+  - plotly
+  
