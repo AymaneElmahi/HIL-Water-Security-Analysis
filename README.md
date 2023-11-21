@@ -102,6 +102,21 @@ And then you have to put the dataset `network_downsampled.csv` in `dataset/Netwo
 mv network_downsampled.csv dataset/Network\ datatset/csv/
 ```
 
+You should then have a dataset named `dataset` in the main directory. It should contain the following files:
+
+```sh
+dataset
+├───Network datatset
+│   ├───csv
+│   │      network_downsampled.csv
+│   │      ...
+│   │--─pcap
+│   │      ...
+│---Physical dataset
+│   ...
+│---README.xlsx
+``` 
+
 ### Installation
 
 ```sh
